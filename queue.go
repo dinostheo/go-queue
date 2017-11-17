@@ -14,7 +14,7 @@ func New() *Queue {
 
 // Init initializes our queue through its internal storage (linked list)
 func (q *Queue) Init() *Queue {
-	q.storage.Init()
+	q.storage = list.New()
 	return q
 }
 
